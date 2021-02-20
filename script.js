@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const goal = document.createElement('h3');
         goal.className = 'goal';
-        goal.innerHTML = "₹ " + people[i].goal;
+        goal.innerHTML = "₹ " + people[i].goal.toLocaleString();
         card.appendChild(goal);
 
         const progress = document.createElement('meter');
