@@ -2,17 +2,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const people = [
         {
             name: "Saurabh Singh",
-            goal: '1,070,000',
+            progress: 25000,
+            goal: 1070000,
             img: 'https://pbs.twimg.com/profile_images/1117457128149544960/aXLwSzcB_400x400.jpg'
         },
         {
             name: "Shubham Singh",
-            goal: '250,000',
+            progress: 40000,
+            goal: 250000,
             img: 'https://pbs.twimg.com/profile_images/1346432398955741186/vghJ7OFG_400x400.jpg'
         },
         {
             name: "Sushant Singh",
-            goal: '1,000,000',
+            progress: 20000,
+            goal: 1000000,
             img: 'https://pbs.twimg.com/profile_images/1306644761411899393/jlOj9vP__400x400.jpg'
         }
     ];
@@ -46,6 +49,16 @@ document.addEventListener('DOMContentLoaded', () => {
         goal.className = 'goal';
         goal.innerHTML = "₹ " + people[i].goal;
         card.appendChild(goal);
+
+        const progress = document.createElement('meter');
+        progress.className = 'progress';
+        progress.setAttribute('min', 0);
+        progress.setAttribute('max', people[i].goal);
+        progress.setAttribute('value', people[i].progress);
+        progress.setAttribute('low', (people[i].goal /100) * 30);
+        progress.setAttribute('high', (people[i].goal /100) * 70);
+        progress.setAttribute('optimum', (people[i].goal /100) * 80);
+        card.appendChild(progress);
 
     }
 
