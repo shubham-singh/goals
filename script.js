@@ -51,10 +51,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const goal = document.createElement('h3');
         goal.className = 'goal';
-        goal.innerHTML = "₹ " + people[i].goal.toLocaleString();
+        goal.innerHTML = '₹ ' + people[i].goal.toLocaleString();
         card.appendChild(goal);
 
-        const percentage = document.createElement('h3');
+        const percentage = document.createElement('h4');
         percentage.className = 'percentage';
         percentage.innerHTML = `${Number((people[i].progress / people[i].goal) * 100).toFixed(2)}% &#128640;`;
         card.appendChild(percentage);
