@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
             name: "Sushant Singh",
             progress: 15600,
             goal: 1000000,
-            img: 'https://pbs.twimg.com/profile_images/1306644761411899393/jlOj9vP__400x400.jpg'
+            img: 'https://pbs.twimg.com/profile_images/1378030520223719424/99nx6gIk_400x400.jpg'
         }
     ];
 
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const percentage = document.createElement('h4');
         percentage.className = 'percentage';
-        percentage.innerHTML = `${Number((people[i].progress / people[i].goal) * 100).toFixed(2)}% &#128640;`;
+        percentage.innerHTML = `₹  ${people[i].progress.toLocaleString()} (${Number((people[i].progress / people[i].goal) * 100).toFixed(2)}%) &#128640;`;
         card.appendChild(percentage);
 
 
