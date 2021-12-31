@@ -2,26 +2,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const people = [
         {
             name: "Saurabh Singh",
-            progress: 14000,
-            goal: 1070000,
+            progress: 0,
+            goal: 300000,
             img: 'https://pbs.twimg.com/profile_images/1117457128149544960/aXLwSzcB_400x400.jpg'
         },
         {
             name: "Shubham Singh",
-            progress: 50000,
-            goal: 250000,
-            img: 'https://pbs.twimg.com/profile_images/1346432398955741186/vghJ7OFG_400x400.jpg'
+            progress: 70000,
+            goal: 750000,
+            img: 'https://pbs.twimg.com/profile_images/1413128587813605382/C3Zy7qAB_400x400.jpg'
         },
         {
             name: "Sushant Singh",
-            progress: 15600,
-            goal: 1000000,
+            progress: 5000,
+            goal: 100000,
             img: 'https://pbs.twimg.com/profile_images/1378030520223719424/99nx6gIk_400x400.jpg'
         }
     ];
 
     let today = Date.now();
-    let last = new Date('2021-12-31T23:59:59');
+    let last = new Date('2022-12-31T23:59:59');
     let difference = last - today;
     let days = parseInt(difference / (1000 * 3600 * 24));
 
@@ -77,4 +77,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     });
 
+    const upOnly = document.createElement('div');
+    upOnly.className = 'uponly'
+    upOnly.innerHTML = '<h1>up only</h1>'
+    document.body.appendChild(upOnly);
+    setTimeout(() => {
+        document.body.removeChild(upOnly);
+    }, 2500)
 });
