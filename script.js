@@ -8,20 +8,20 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             name: "Shubham Singh",
-            progress: 260000,
-            goal: 750000,
+            progress: 350000,
+            goal: 1000000,
             img: 'https://pbs.twimg.com/profile_images/1413128587813605382/C3Zy7qAB_400x400.jpg'
         },
         {
             name: "Sushant Singh",
-            progress: 47000,
+            progress: 82500,
             goal: 100000,
             img: 'https://pbs.twimg.com/profile_images/1378030520223719424/99nx6gIk_400x400.jpg'
         }
     ];
 
     let today = Date.now();
-    let last = new Date('2022-12-31T23:59:59');
+    let last = new Date('2023-12-31T23:59:59');
     let difference = last - today;
     let days = parseInt(difference / (1000 * 3600 * 24));
 
@@ -69,13 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
         progress.setAttribute('high', (people[i].goal /100) * 70);
         progress.setAttribute('optimum', (people[i].goal /100) * 80);
         card.appendChild(progress);
-
     }
-
-    const progress = document.createElement('meter');
-    progress.addEventListener('hover', () => {
-
-    });
 
     const upOnly = document.createElement('div');
     upOnly.className = 'uponly'
