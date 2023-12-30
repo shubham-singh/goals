@@ -8,20 +8,21 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             name: "Shubham Singh",
-            progress: 350000,
-            goal: 1000000,
+            progress: 1350000,
+            goal: 2500000,
             img: 'https://pbs.twimg.com/profile_images/1413128587813605382/C3Zy7qAB_400x400.jpg'
         },
         {
             name: "Sushant Singh",
-            progress: 82500,
+            progress: 60000,
             goal: 100000,
             img: 'https://pbs.twimg.com/profile_images/1378030520223719424/99nx6gIk_400x400.jpg'
         }
     ];
 
     let today = Date.now();
-    let last = new Date('2023-12-31T23:59:59');
+    const year = new Date().getFullYear()
+    let last = new Date(`${year}-12-31T23:59:59`);
     let difference = last - today;
     let days = parseInt(difference / (1000 * 3600 * 24));
 
