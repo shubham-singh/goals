@@ -26,6 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let difference = last - today;
     let days = parseInt(difference / (1000 * 3600 * 24));
 
+    const heading = document.createElement('h1')
+    heading.innerHTML = `31<sup>st</sup> December, ${year}`
+    document.body.append(heading)
+
     const daysLeft = document.createElement('h2');
     daysLeft.innerHTML = days + " days left"
     document.body.appendChild(daysLeft);
