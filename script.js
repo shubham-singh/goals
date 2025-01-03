@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             name: "Sushant Singh",
-            progress: 62000,
-            goal: 100000,
+            progress: 70000,
+            goal: 500000,
             img: 'https://pbs.twimg.com/profile_images/1378030520223719424/99nx6gIk_400x400.jpg'
         }
     ];
