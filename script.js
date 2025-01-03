@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             name: "Shubham Singh",
-            progress: 2200000,
-            goal: 2500000,
+            progress: 3100000,
+            goal: 5000000,
             img: 'https://pbs.twimg.com/profile_images/1775121802681061376/Vj8Y_QYU_400x400.jpg'
         },
         {
