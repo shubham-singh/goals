@@ -8,14 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             name: "Shubham Singh",
-            progress: 3100000,
-            goal: 5000000,
+            progress: 4400000,
+            goal: 10000000,
             img: 'https://pbs.twimg.com/profile_images/1775121802681061376/Vj8Y_QYU_400x400.jpg'
         },
         {
             name: "Sushant Singh",
-            progress: 70000,
-            goal: 500000,
+            progress: 150000,
+            goal: 1000000,
             img: 'https://pbs.twimg.com/profile_images/1378030520223719424/99nx6gIk_400x400.jpg'
         }
     ];
